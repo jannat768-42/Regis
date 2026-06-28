@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Life Saver Blood Donation Program</title>
+        <link rel="stylesheet" href="externalclss.css">
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                background-color:#f2f2f2;
+            }
+            h2{
+                text-align: center;
+                color:navy;
+            }
+            form{
+                width:800px;
+                margin:auto;
+                padding:20px;
+                background-color:white;
+                border:2px solid gray;
+                border-radius:10px;
+            }
+            input,
+            textarea,
+            select{
+                width:100%;
+                padding:4px;
+                margin-top:5px;
+            }
+            table{
+                width:800px;
+                margin:20px auto;
+                border-collapse:collapse;
+            }
+            table,
+            th,
+            td{
+                border:1px solid black;
+                padding:10px;
+                text-align:center;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1 style="text-decoration:underline;">Life Saver Blood Donation Program</h1>
+
+            <p>Welcome!This webpage help people register as blood donors and request emergency blood.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Blood Donor Registration Form</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Donor Information</legend>
+
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="age">Age:</label><br>
+                        <input type="age" id="age" name="age" required><br><br>
+
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="Male" required><br><br>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="Female" required><br><br>
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="others" name="gender" value="Others" required><br><br>
+                        <label for="others">Others</label><br><br>
+
+                        <label for="bloodgroup">Blood Group:</label>
+                        <select id="bloodgroup" name="bloodgroup">
+                            <option value="A+">A+</option>
+                            <option Value="B+">B+</option>
+                            <option Value="AB+">AB+</option>
+                            <option Value="O+">O+</option>
+                        </select><br><br>
+
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="address">Address:</label><br>
+                        <input type="text" id="address" name="address" required><br><br>
+
+                        <label for="dob">Last Donation Date:</label><br>
+                        <input type="date" id="dob" name="dob" required><br><br>
+
+                        <label for="health">Health Condition:</label><br>
+                        <input type="text" id="health" name="health" required><br><br>
+
+                        <input type="submit" value="Register" style="background-color:green;color:white;">
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <h2>Blood Request Form</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+
+                        <legend>Blood Request List</legend>
+
+                        <label for="patientname">Patient Name:</label><br>
+                        <input type="text" id="patientname" name="patientname" required><br><br>
+
+                        <label for="bloodgroup">Required Blood Group:</label><br>
+                        <input type="text" id="bloodgroup" name="bloodgroup" required><br><br> 
+                        
+                        <label for="hospitalname">Hospital Name:</label><br>
+                        <input type="text" id="hospitalname" name="hospitalname" required><br><br>
+
+                        <label for="contact">Emergency Contact:</label><br>
+                        <input type="tel" id="contact" name="contact" required><br><br>
+
+                        <label for="reqdob">Required Date:</label><br>
+                        <input type="date" id="reqdob" name="reqdob" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <input type="text" id="message" name="message" required><br><br>
+
+                        <input type="submit" value="Request" style="background-color:yellow;color:red;">
+
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <h2>Blood Donor Table:</h2>
+                <table>
+                    <tr>
+                        <th>Blood Group</th>
+                        <th>Registered Donors</th>
+                    </tr>
+
+                    <tr><td>A+</td><td>20</td></tr>
+                    <tr><td>B+</td><td>21</td></tr>
+                    <tr><td>AB+</td><td>22</td></tr>
+                    <tr><td>O+</td><td>23</td></tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p style="text-align:center;">Life Saver Blood Donation Program</p>  
+        </footer>
+    </body>
+</html>
